@@ -1,10 +1,8 @@
 const separator = '<sep gap="45"/>';
 
-const top = `
+const top = ``; /* `
     <category name="Top" colour="#FFFFFF" secondaryColour="#CCCCCC">
         <block type="event_whenflagclicked"/>
-        <block type="event_whenkeypressed">
-        </block>
         <block type="event_whenthisspriteclicked"/>
         <block type="motion_movesteps">
             <value name="STEPS">
@@ -72,9 +70,9 @@ const top = `
             </value>
         </block>
     </category>
-`;
+`; */
 
-const motion = `
+const motion =``;/*  `
     <category name="Motion" colour="#4C97FF" secondaryColour="#3373CC">
         <block type="motion_movesteps">
             <value name="STEPS">
@@ -190,112 +188,9 @@ const motion = `
         <block type="motion_yposition"/>
         <block type="motion_direction"/>
     </category>
-`;
+`; */
 
-const looks = `
-    <category name="Looks" colour="#9966FF" secondaryColour="#774DCB">
-        <block type="looks_sayforsecs">
-            <value name="MESSAGE">
-                <shadow type="text">
-                    <field name="TEXT">Hello!</field>
-                </shadow>
-            </value>
-            <value name="SECS">
-                <shadow type="math_number">
-                    <field name="NUM">2</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_say">
-            <value name="MESSAGE">
-                <shadow type="text">
-                    <field name="TEXT">Hello!</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_thinkforsecs">
-            <value name="MESSAGE">
-                <shadow type="text">
-                    <field name="TEXT">Hmm...</field>
-                </shadow>
-            </value>
-            <value name="SECS">
-                <shadow type="math_number">
-                    <field name="NUM">2</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_think">
-            <value name="MESSAGE">
-                <shadow type="text">
-                    <field name="TEXT">Hmm...</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_show"/>
-        <block type="looks_hide"/>
-        <block type="looks_switchcostumeto">
-            <value name="COSTUME">
-                <shadow type="looks_costume"/>
-            </value>
-        </block>
-        <block type="looks_nextcostume"/>
-        <block type="looks_nextbackdrop"/>
-        <block type="looks_switchbackdropto">
-            <value name="BACKDROP">
-                <shadow type="looks_backdrops"/>
-            </value>
-        </block>
-        <block type="looks_switchbackdroptoandwait">
-            <value name="BACKDROP">
-                <shadow type="looks_backdrops"/>
-            </value>
-        </block>
-        <block type="looks_changeeffectby">
-            <value name="CHANGE">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_seteffectto">
-            <value name="VALUE">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_cleargraphiceffects"/>
-        <block type="looks_changesizeby">
-            <value name="CHANGE">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_setsizeto">
-            <value name="SIZE">
-                <shadow type="math_number">
-                    <field name="NUM">100</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_gotofront"/>
-        <block type="looks_gobacklayers">
-            <value name="NUM">
-                <shadow type="math_integer">
-                    <field name="NUM">1</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="looks_costumeorder"/>
-        <block type="looks_backdroporder"/>
-        <block type="looks_backdropname"/>
-        <block type="looks_size"/>
-    </category>
-`;
-
-const sound = `
+const sound =``;/*  `
     <category name="Sound" colour="#D65CD6" secondaryColour="#BD42BD">
         <block type="sound_play">
             <value name="SOUND_MENU">
@@ -388,87 +283,13 @@ const sound = `
         </block>
         <block type="sound_tempo"/>
     </category>
-`;
-
-const pen = `
-    <category name="Pen" colour="#00B295" secondaryColour="#0B8E69">
-        <block type="pen_clear"/>
-        <block type="pen_stamp"/>
-        <block type="pen_pendown"/>
-        <block type="pen_penup"/>
-        <block type="pen_setpencolortocolor">
-            <value name="COLOR">
-                <shadow type="colour_picker">
-                </shadow>
-            </value>
-        </block>
-        <block type="pen_changepencolorby">
-            <value name="COLOR">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="pen_setpencolortonum">
-            <value name="COLOR">
-                <shadow type="math_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="pen_changepenshadeby">
-            <value name="SHADE">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="pen_setpenshadeto">
-            <value name="SHADE">
-                <shadow type="math_number">
-                    <field name="NUM">50</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="pen_changepensizeby">
-            <value name="SIZE">
-                <shadow type="math_number">
-                    <field name="NUM">1</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="pen_setpensizeto">
-            <value name="SIZE">
-                <shadow type="math_number">
-                    <field name="NUM">1</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="pen_changepentransparencyby" id="pen_changepentransparencyby">
-            <value name="TRANSPARENCY">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-            </shadow>
-          </value>
-        </block>
-        <block type="pen_setpentransparencyto" id="pen_setpentransparencyto">
-            <value name="TRANSPARENCY">
-                <shadow type="math_number">
-                    <field name="NUM">50</field>
-                </shadow>
-            </value>
-        </block>
-    </category>
-`;
+`; */
 
 const events = `
     <category name="Events" colour="#FFD500" secondaryColour="#CC9900">
         <block type="event_whenflagclicked"/>
-        <block type="event_whenkeypressed">
-        </block>
-        <block type="event_whenthisspriteclicked"/>
-        <block type="event_whenbackdropswitchesto">
-        </block>
+        <!--<block type="event_whenkeypressed">
+        </block>-->
         <block type="event_whengreaterthan">
             <value name="VALUE">
                 <shadow type="math_number">
@@ -523,7 +344,7 @@ const control = `
     </category>
 `;
 
-const sensing = `
+const sensing = ``;/*  `
     <category name="Sensing" colour="#4CBFE6" secondaryColour="#2E8EB8">
         <block type="sensing_touchingobject">
             <value name="TOUCHINGOBJECTMENU">
@@ -574,7 +395,7 @@ const sensing = `
         </block>
         <block type="sensing_dayssince2000"/>
     </category>
-`;
+`; */
 
 const operators = `
     <category name="Operators" colour="#40BF4A" secondaryColour="#389438">
@@ -756,12 +577,10 @@ const makeToolboxXML = function (categoriesXML) {
         xmlOpen,
         top, gap,
         motion, gap,
-        looks, gap,
         sound, gap,
         events, gap,
         control, gap,
         sensing, gap,
-        pen, gap,
         operators, gap,
         data
     ];
