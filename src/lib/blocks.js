@@ -67,43 +67,10 @@ export default function (vm) {
 
     const soundColors = ScratchBlocks.Colours.sounds;
 
-    const motionColors = ScratchBlocks.Colours.motion;
-
-    const sensingColors = ScratchBlocks.Colours.sensing;
-
     const controlColors = ScratchBlocks.Colours.control;
 
     ScratchBlocks.Blocks.sound_sounds_menu.init = function () {
         const json = jsonForMenuBlock('SOUND_MENU', soundsMenu, soundColors, []);
-        this.jsonInit(json);
-    };
-
-    ScratchBlocks.Blocks.sensing_of_object_menu.init = function () {
-        const json = jsonForMenuBlock('OBJECT', spriteMenu, sensingColors, [
-            ['Stage', '_stage_']
-        ]);
-        this.jsonInit(json);
-    };
-
-    ScratchBlocks.Blocks.sensing_videoonmenutwo.init = function () {
-        const json = jsonForMenuBlock('VIDEOONMENU2', spriteMenu, sensingColors, [
-            ['stage', 'STAGE']
-        ]);
-        this.jsonInit(json);
-    };
-
-    ScratchBlocks.Blocks.sensing_distancetomenu.init = function () {
-        const json = jsonForMenuBlock('DISTANCETOMENU', spriteMenu, sensingColors, [
-            ['mouse-pointer', '_mouse_']
-        ]);
-        this.jsonInit(json);
-    };
-
-    ScratchBlocks.Blocks.sensing_touchingobjectmenu.init = function () {
-        const json = jsonForMenuBlock('TOUCHINGOBJECTMENU', spriteMenu, sensingColors, [
-            ['mouse-pointer', '_mouse_'],
-            ['edge', '_edge_']
-        ]);
         this.jsonInit(json);
     };
 

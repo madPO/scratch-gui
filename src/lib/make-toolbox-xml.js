@@ -241,58 +241,14 @@ const control = `
     </category>
 `;
 
-const sensing = ``;/*  `
+const sensing =  `
     <category name="Sensing" colour="#4CBFE6" secondaryColour="#2E8EB8">
-        <block type="sensing_touchingobject">
-            <value name="TOUCHINGOBJECTMENU">
-                <shadow type="sensing_touchingobjectmenu"/>
-            </value>
+        <block type="sensing_sensors">
         </block>
-        <block type="sensing_touchingcolor">
-            <value name="COLOR">
-                <shadow type="colour_picker"/>
-            </value>
+        <block type="sensing_ultrasound">
         </block>
-        <block type="sensing_coloristouchingcolor">
-            <value name="COLOR">
-                <shadow type="colour_picker"/>
-            </value>
-            <value name="COLOR2">
-                <shadow type="colour_picker"/>
-            </value>
-        </block>
-        <block type="sensing_distanceto">
-            <value name="DISTANCETOMENU">
-                <shadow type="sensing_distancetomenu"/>
-            </value>
-        </block>
-        <block type="sensing_keypressed">
-            <value name="KEY_OPTION">
-                <shadow type="sensing_keyoptions"/>
-            </value>
-        </block>
-        <block type="sensing_mousedown"/>
-        <block type="sensing_mousex"/>
-        <block type="sensing_mousey"/>
-        <block type="sensing_loudness"/>
-        <block type="sensing_timer"/>
-        <block type="sensing_resettimer"/>
-        <block type="sensing_of">
-            <value name="PROPERTY">
-                <shadow type="sensing_of_property_menu"/>
-            </value>
-            <value name="OBJECT">
-                <shadow type="sensing_of_object_menu"/>
-            </value>
-        </block>
-        <block type="sensing_current">
-            <value name="CURRENTMENU">
-                <shadow type="sensing_currentmenu"/>
-            </value>
-        </block>
-        <block type="sensing_dayssince2000"/>
     </category>
-`; */
+`;
 
 const operators = `
     <category name="Operators" colour="#40BF4A" secondaryColour="#389438">
