@@ -72,123 +72,20 @@ const top = ``; /* `
     </category>
 `; */
 
-const motion =``;/*  `
+const motion =`
     <category name="Motion" colour="#4C97FF" secondaryColour="#3373CC">
-        <block type="motion_movesteps">
-            <value name="STEPS">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
+        <block type="motion_start">
         </block>
-        <block type="motion_turnright">
-            <value name="DEGREES">
-                <shadow type="math_number">
-                    <field name="NUM">15</field>
-                </shadow>
-            </value>
+        <block type="motion_commit">
         </block>
-        <block type="motion_turnleft">
-            <value name="DEGREES">
-                <shadow type="math_number">
-                    <field name="NUM">15</field>
-                </shadow>
-            </value>
+        <block type="motion_go">
         </block>
-        <block type="motion_pointindirection">
-            <value name="DIRECTION">
-                <shadow type="math_angle">
-                    <field name="NUM">90</field>
-                </shadow>
-            </value>
+        <block type="motion_set">
         </block>
-        <block type="motion_pointtowards">
-            <value name="TOWARDS">
-                <shadow type="motion_pointtowards_menu">
-                </shadow>
-            </value>
+        <block type="motion_move">
         </block>
-        <block type="motion_gotoxy">
-            <value name="X">
-                <shadow type="math_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-            <value name="Y">
-                <shadow type="math_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="motion_goto">
-            <value name="TO">
-                <shadow type="motion_goto_menu">
-                </shadow>
-            </value>
-        </block>
-        <block type="motion_glidesecstoxy">
-            <value name="SECS">
-                <shadow type="math_number">
-                    <field name="NUM">1</field>
-                </shadow>
-            </value>
-            <value name="X">
-                <shadow type="math_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-            <value name="Y">
-                <shadow type="math_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="motion_glideto" id="motion_glideto">
-            <value name="SECS">
-                <shadow type="math_number">
-                    <field name="NUM">1</field>
-                </shadow>
-            </value>
-            <value name="TO">
-                <shadow type="motion_glideto_menu">
-                </shadow>
-            </value>
-        </block>
-        <block type="motion_changexby">
-            <value name="DX">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="motion_setx">
-            <value name="X">
-                <shadow type="math_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="motion_changeyby">
-            <value name="DY">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="motion_sety">
-            <value name="Y">
-                <shadow type="math_number">
-                    <field name="NUM">0</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="motion_ifonedgebounce"/>
-        <block type="motion_setrotationstyle"/>
-        <block type="motion_xposition"/>
-        <block type="motion_yposition"/>
-        <block type="motion_direction"/>
     </category>
-`; */
+`;
 
 const sound =``;/*  `
     <category name="Sound" colour="#D65CD6" secondaryColour="#BD42BD">
@@ -558,6 +455,13 @@ const operators = `
     </category>
 `;
 
+const services = `
+<category name="Service" colour="#9966FF" secondaryColour="#774DCB">
+    <block type="services_hello">
+    </block>
+</category>
+`;
+
 const data = `
     <category name="Data" colour="#FF8C1A" secondaryColour="#DB6E00" custom="VARIABLE">
     </category>
@@ -582,6 +486,7 @@ const makeToolboxXML = function (categoriesXML) {
         control, gap,
         sensing, gap,
         operators, gap,
+        services, gap,
         data
     ];
 

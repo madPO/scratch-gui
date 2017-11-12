@@ -13,7 +13,10 @@
     "test:integration": "jest --runInBand test[\\\\/]integration",
     "test:lint": "eslint . --ext .js,.jsx",
     "test:unit": "jest test[\\\\/]unit",
-    "watch": "webpack --progress --colors --watch"
+    "watch": "webpack --progress --colors --watch",
+    "link": "npm link C:/roma/scratch-blocks && npm link C:/roma/scratch-vm && npm start",
+    "link-vm":"npm link C:/roma/scratch-vm && npm start",
+    "link-blocks":"npm link C:/roma/scratch-blocks && npm start"
   },
   "author": "Massachusetts Institute of Technology",
   "license": "BSD-3-Clause",
