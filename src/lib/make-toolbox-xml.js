@@ -332,10 +332,11 @@ const operators = `
 `;
 
 const services = `
-<category name="Service" colour="#9966FF" secondaryColour="#774DCB">
-    <block type="services_hello">
-    </block>
-</category>
+    <category name="Service" colour="#9966FF" secondaryColour="#774DCB">
+        <block type="services_hello" />
+        <block type="services_state" />
+        <block type="services_lastcycle" />
+    </category>
 `;
 
 const data = `
