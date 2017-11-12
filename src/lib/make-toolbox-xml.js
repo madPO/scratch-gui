@@ -87,100 +87,20 @@ const motion =`
     </category>
 `;
 
-const sound =``;/*  `
+const sound = `
     <category name="Sound" colour="#D65CD6" secondaryColour="#BD42BD">
+        <block type="sound_sound">
+        </block>
         <block type="sound_play">
-            <value name="SOUND_MENU">
-                <shadow type="sound_sounds_menu"/>
-            </value>
-        </block>
-        <block type="sound_playuntildone">
-            <value name="SOUND_MENU">
-                <shadow type="sound_sounds_menu"/>
-            </value>
-        </block>
-        <block type="sound_stopallsounds"/>
-        <block type="sound_playdrumforbeats">
-            <value name="DRUM">
-                <shadow type="sound_drums_menu"/>
-            </value>
-            <value name="BEATS">
+            <value name="WHAT">
                 <shadow type="math_number">
-                    <field name="NUM">0.25</field>
+                    <field name="NUM">0001</field>
                 </shadow>
             </value>
         </block>
-        <block type="sound_restforbeats">
-            <value name="BEATS">
-                <shadow type="math_number">
-                    <field name="NUM">0.25</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="sound_playnoteforbeats">
-            <value name="NOTE">
-                <shadow type="math_number">
-                    <field name="NUM">60</field>
-                </shadow>
-            </value>
-            <value name="BEATS">
-                <shadow type="math_number">
-                    <field name="NUM">0.5</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="sound_setinstrumentto">
-            <value name="INSTRUMENT">
-                <shadow type="sound_instruments_menu"/>
-            </value>
-        </block>
-        <block type="sound_changeeffectby">
-            <value name="VALUE">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="sound_seteffectto">
-            <value name="VALUE">
-                <shadow type="math_number">
-                    <field name="NUM">100</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="sound_cleareffects"/>
-        <block type="sound_changevolumeby">
-            <value name="VOLUME">
-                <shadow type="math_number">
-                    <field name="NUM">-10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="sound_setvolumeto">
-            <value name="VOLUME">
-                <shadow type="math_number">
-                    <field name="NUM">100</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="sound_volume"/>
-        <block type="sound_changetempoby">
-            <value name="TEMPO">
-                <shadow type="math_number">
-                    <field name="NUM">20</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="sound_settempotobpm">
-            <value name="TEMPO">
-                <shadow type="math_number">
-                    <field name="NUM">60</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="sound_tempo"/>
+        <block type="sound_mute"/>
     </category>
-`; */
+`;
 
 const events = `
     <category name="Events" colour="#FFD500" secondaryColour="#CC9900">

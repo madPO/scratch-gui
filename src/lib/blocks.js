@@ -65,14 +65,7 @@ export default function (vm) {
         return sprites;
     };
 
-    const soundColors = ScratchBlocks.Colours.sounds;
-
     const controlColors = ScratchBlocks.Colours.control;
-
-    ScratchBlocks.Blocks.sound_sounds_menu.init = function () {
-        const json = jsonForMenuBlock('SOUND_MENU', soundsMenu, soundColors, []);
-        this.jsonInit(json);
-    };
 
     ScratchBlocks.Blocks.control_create_clone_of_menu.init = function () {
         const json = jsonForMenuBlock('CLONE_OPTION', spriteMenu, controlColors, [
